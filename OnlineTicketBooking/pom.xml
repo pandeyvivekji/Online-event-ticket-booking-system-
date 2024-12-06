@@ -11,11 +11,19 @@
     <description>Online Ticket Booking System with QR Code</description>
 
     <dependencies>
+       
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
             <version>3.0.0</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+
+      
         <dependency>
             <groupId>com.google.zxing</groupId>
             <artifactId>core</artifactId>
@@ -26,6 +34,8 @@
             <artifactId>javase</artifactId>
             <version>3.5.0</version>
         </dependency>
+
+       
         <dependency>
             <groupId>jakarta.mail</groupId>
             <artifactId>jakarta.mail-api</artifactId>
@@ -36,5 +46,29 @@
             <artifactId>jakarta.mail</artifactId>
             <version>2.0.1</version>
         </dependency>
+
+        
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <scope>runtime</scope>
+            <optional>true</optional>
+        </dependency>
+
+       
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 </project>
