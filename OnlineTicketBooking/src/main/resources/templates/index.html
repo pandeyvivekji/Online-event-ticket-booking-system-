@@ -1,29 +1,21 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html>
 <head>
     <title>Online Ticket Booking</title>
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <div class="container">
         <h1>Online Ticket Booking</h1>
-        <form action="/api/ticket/book" method="post" onsubmit="return validateForm()">
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" class="form-control" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" class="form-control" required>
-            </div>
-            <div class="form-group">
-                <label for="event">Event</label>
-                <input type="text" id="event" name="event" class="form-control" required>
-            </div>
-            <button type="submit" class="btn btn-primary">Book Ticket</button>
+        <form action="/api/ticket/book" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="event">Event</label>
+            <input type="text" id="event" name="event" required>
+            <button type="submit">Book Ticket</button>
         </form>
     </div>
-    <script src="/js/scripts.js"></script>
 </body>
 </html>
